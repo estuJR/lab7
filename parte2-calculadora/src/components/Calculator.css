@@ -1,0 +1,130 @@
+.calculator {
+  width: 340px;
+  background: rgba(30, 30, 46, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #e8e8f0;
+}
+
+.calculator-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.badge {
+  font-size: 10px;
+  padding: 4px 10px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.display {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: right;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.expression {
+  color: rgba(232, 232, 240, 0.5);
+  font-size: 14px;
+  margin-bottom: 8px;
+  word-break: break-all;
+  min-height: 18px;
+}
+
+.result {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 300;
+  word-break: break-all;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 60px;
+  border: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #ffffff;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn.number {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn.number:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn.operator {
+  background: rgba(168, 85, 247, 0.25);
+  color: #c4b5fd;
+}
+
+.btn.operator:hover {
+  background: rgba(168, 85, 247, 0.4);
+}
+
+.btn.function,
+.btn.clear {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.btn.function:hover,
+.btn.clear:hover {
+  background: rgba(239, 68, 68, 0.35);
+}
+
+.btn.equals {
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+}
+
+.btn.equals:hover {
+  background: linear-gradient(135deg, #b86bf8, #7376f3);
+}
+
+.btn.wide {
+  grid-column: span 2;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
